@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    background-attachment: fixed;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 300px;
+    height: 100vh;
+    background: radial-gradient(100% 154.22% at 22.01% 0%, #3D348B 22.47%, #393CB8 34.28%, #7678ED 57.17%, #C081D0 81.35%, #F7B801 96.55%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+#profile-el {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#profile-img {
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 12px;
+}
+
+#profile-img:hover {
+    cursor: pointer;
+}
+
+#profile-txt {
+    font-weight: 100;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#my-groups-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-indent: 20px;
+    color: #7678ED;
+}
+
+#join-btn {
+    display: flex;
+    gap: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#join-btn:hover {
+    cursor: pointer;
+}
+
+.group {
+    font-size: 17px;
+    margin-right: 12px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 80px;
+
+    background: rgba(220, 221, 254, 0.7);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.group:hover {
+    cursor: pointer
+}
+
+#add-btn {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    border: 7px solid white;
+    border-radius: 50%;
+    background: radial-gradient(100% 154.22% at 22.01% 0%, #3D348B 22.47%, #393CB8 34.28%, #7678ED 57.17%, #C081D0 81.35%, #F7B801 96.55%);
+    width: 110px;
+    height: 110px;
+    position: fixed;
+    bottom: 0;
+    right: 105px;
+}
+
+#add-btn:hover {
+    cursor: pointer;
+    background-color: #b8b5b5;
+}
+
+#add-post-el {
+    display: flex;
+    flex-direction: row;
+}
+
+#add-post-txt {
+    margin-right: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    font-weight: 600;
+    background: radial-gradient(100% 154.22% at 22.01% 0%, #3D348B 22.47%, #393CB8 34.28%, #7678ED 57.17%, #C081D0 81.35%, #F7B801 96.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
