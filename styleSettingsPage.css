@@ -9,9 +9,7 @@
 body {
     height: 100%;
     width: 100%;
-    background: radial-gradient(100% 154.22% at 22.01% 0%, #3D348B 22.47%, #393CB8 34.28%, #7678ED 57.17%, #C081D0 81.35%, #F7B801 96.55%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
+    background: radial-gradient(100% 154.22% at 22.01% 0%, #3D348B 22.47%, #393CB8 34.28%, #7678ED 57.17%, #C081D0 81.35%, #F7B801 96.55%);
     background-attachment: fixed;
     font-family: 'Comfortaa';
     font-style: normal;
@@ -32,14 +30,47 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8%;
 }
 
 #logo {
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     width: 200px;
     height: 200px;
     background: white;
+}
+
+.option {
+    margin-top: 1%;
+    font-size: 50px;
+    margin-left: 20%;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+.option p {
+    margin-left: 15px;
+}
+
+.option:hover {
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+}
+
+#back-arrow {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 50px 70px;
+}
+
+#back-arrow:hover {
+    cursor: pointer;
 }
