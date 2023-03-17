@@ -68,10 +68,12 @@ form input {
 }
 
 #logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin-bottom: 30px;
     width: 200px;
     height: 200px;
-    background-color: white;
 }
 
 #sign-in-btn {
@@ -89,3 +91,53 @@ form input {
 .btn:hover {
     cursor: pointer;
 }
+
+
+
+@media (max-width: 992px) {
+    main {
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    form {
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form input {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sign-in-btn {
+        position: absolute;
+        bottom: -460px;
+    }
+
+    #cancel-btn {
+        position: absolute;
+        bottom: -370px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+/* 
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {}
+
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {} */

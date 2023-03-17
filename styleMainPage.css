@@ -110,14 +110,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 120px;
+    font-size: 70px;
+    font-weight: bold;
     border: 7px solid white;
     border-radius: 50%;
     background: radial-gradient(100% 154.22% at 22.01% 0%, #3D348B 22.47%, #393CB8 34.28%, #7678ED 57.17%, #C081D0 81.35%, #F7B801 96.55%);
-    width: 110px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     right: 105px;
 }
 
@@ -132,6 +133,7 @@ nav {
 }
 
 #add-post-txt {
+    font-weight: bold;
     margin-right: 10px;
     position: fixed;
     bottom: 70px;
@@ -141,4 +143,21 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+
+@media (max-width: 992px) {
+    #add-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 60px;
+        position: fixed;
+        bottom: 10px;
+        right: 0px;
+    }
+
+    #add-post-txt {
+        display: none;
+
+        overflow: hidden;
+    }
 }
