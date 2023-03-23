@@ -18,6 +18,7 @@ body {
     font-weight: 600;
     font-size: 25px;
     line-height: 28px;
+    overflow: hidden;
 }
 
 main {
@@ -31,6 +32,13 @@ main {
     display: flex;
     width: 200px;
     height: 200px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .login-input {
@@ -48,7 +56,6 @@ main {
 
 #login-btn {
     text-align: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,4 +68,35 @@ main {
 #login-btn:hover {
     cursor: pointer;
     background: #836ef7;
+}
+
+#bottom-txt {
+    margin-top: 7%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    text-indent: 15px;
+    color: #FFFFFF;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#register-btn:hover {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    #bottom-txt {
+        font-size: 15px;
+    }
 }

@@ -23,11 +23,19 @@
             </svg>
         </div>
         <h1 id="app-name"></h1>
-        <input type="text" id="email-input" class="login-input" placeholder="e-mail">
-        <input type="text" id="pass-input" class="login-input" placeholder="password">
-        <button id="login-btn">
-            login
-        </button>
+        <form action="#">
+            <input type="email" id="email-input" class="login-input" placeholder="e-mail" required>
+            <input type="password" id="pass-input" class="login-input" placeholder="password" required>
+            <button id="login-btn">
+                login
+            </button>
+        </form>
+        <span id="bottom-txt">
+            You don’t have an account yet?
+            <div id="register-btn">
+                <a href="registerPage.html">Register here!</a>
+            </div>
+        </span>
     </main>
 
 </body>

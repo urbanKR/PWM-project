@@ -30,6 +30,8 @@ nav {
     background: radial-gradient(100% 154.22% at 22.01% 0%, #3D348B 22.47%, #393CB8 34.28%, #7678ED 57.17%, #C081D0 81.35%, #F7B801 96.55%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.28s ease-in-out;
 }
 
 #profile-el {
@@ -104,6 +106,22 @@ nav {
     cursor: pointer
 }
 
+#h-menu {
+    color: #3D348B;
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    background: #3D348B;
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 6px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.28s ease-in-out;
+}
+
 #add-btn {
     margin-bottom: 20px;
     margin-right: 20px;
@@ -127,11 +145,6 @@ nav {
     background-color: #b8b5b5;
 }
 
-#add-post-el {
-    display: flex;
-    flex-direction: row;
-}
-
 #add-post-txt {
     font-weight: bold;
     margin-right: 10px;
@@ -146,6 +159,46 @@ nav {
 }
 
 @media (max-width: 992px) {
+    nav {
+        transition: opacity 1s ease-out;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #h-menu {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin: 10px 10px;
+    }
+
+    .show-nav {
+        opacity: 1;
+        height: 100vh;
+    }
+
+
+    #h-menu.open .bar:nth-child(1) {
+        opacity: 0;
+    }
+
+    #h-menu.open .bar:nth-child(2) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    #h-menu.open .bar:nth-child(3) {
+        transform: translateY(-9px)rotate(45deg);
+    }
+
+
+    #add-post-el {
+        display: flex;
+        flex-direction: row;
+    }
+
+
     #add-btn {
         width: 60px;
         height: 60px;
