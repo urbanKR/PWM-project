@@ -24,7 +24,8 @@ main {
     flex-direction: column;
     justify-content: center;
     margin-top: 5%;
-    margin-left: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #top-el {
@@ -57,7 +58,7 @@ hr {
     cursor: pointer;
 }
 
-#feedback-txt {
+#help-txt {
     font-family: 'Comfortaa';
     resize: none;
     font-size: 25px;
@@ -79,25 +80,23 @@ hr {
 #accept-btn:hover {
     cursor: pointer;
 }
-#text-lbl{
-    margin: 7%;
 
-}
 
 @media (max-width: 992px) {
     main {
         align-items: center;
-        margin-left: 0;
+       
     }
 
-    #feedback-txt {
+    #help-txt {
         display: flex;
         align-items: center;
-        font-size: 25px;
+        font-size: 1.2rem;
+
     }
 
     #txt-lbl {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
 }

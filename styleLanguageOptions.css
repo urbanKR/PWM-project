@@ -23,8 +23,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5%;
-    margin-left: 7%;
 }
 
 #top-el {
@@ -38,7 +36,7 @@ main {
 }
 
 hr {
-    position: fixed;
+    position: absolute;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -57,47 +55,27 @@ hr {
     cursor: pointer;
 }
 
-#feedback-txt {
+.button-language{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 10%;
+    background-color:inherit;
+    width: 100%;
     font-family: 'Comfortaa';
-    resize: none;
-    font-size: 25px;
-    margin-top: 2%;
-    width: 80%;
-    height: 20rem;
-    background: rgba(217, 217, 217, 0.3);
-    border-radius: 10px;
-}
+    font-size: 1.2rem;
+    border-color:rgba(255, 255, 255, 0.2);
+    text-align: left;
 
-#accept-btn {
-    margin-top: 1%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 80%;
 }
-
-#accept-btn:hover {
+.button-language:hover {
     cursor: pointer;
 }
-#text-lbl{
-    margin: 7%;
-
-}
-
 @media (max-width: 992px) {
-    main {
-        align-items: center;
-        margin-left: 0;
+    .button-language{
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        font-size: 0.8rem;
     }
 
-    #feedback-txt {
-        display: flex;
-        align-items: center;
-        font-size: 25px;
-    }
-
-    #txt-lbl {
-        font-size: 0.7rem;
-    }
 
 }
