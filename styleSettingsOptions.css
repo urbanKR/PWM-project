@@ -79,6 +79,10 @@ hr {
 #accept-btn:hover {
     cursor: pointer;
 }
+#text-lbl{
+    margin: 7%;
+
+}
 
 @media (max-width: 992px) {
     main {
@@ -93,7 +97,7 @@ hr {
     }
 
     #txt-lbl {
-        font-size: 20px;
+        font-size: 0.7rem;
     }
 
 }
