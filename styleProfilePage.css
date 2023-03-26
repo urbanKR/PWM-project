@@ -80,4 +80,35 @@ main {
         justify-content: center;
         margin: 20px 0;
     }
+
+    .profile-option {
+        font-size: 18px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .svg-main {
+        width: 60px;
+        height: 60px;
+    }
+
+    #profile-svg {
+        width: 230px;
+        height: 230px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .svg-main {
+        width: 40px;
+        height: 40px;
+    }
+
+    #profile-svg {
+        width: 180px;
+        height: 180px;
+    }
 }
