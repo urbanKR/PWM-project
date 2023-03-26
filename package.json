@@ -1,0 +1,23 @@
+{
+  "name": "projectpwm",
+  "version": "1.0.0",
+  "description": "<h1>PWM Project</h1/> <p>Authors:</p> <p>Krzysztof Urban</p> <p>Weronika Wójcik</p> <p>Yerrai</p> <p>Based on Figma Mockup: https://www.figma.com/file/DF338oMBoBgKLJr7kKgUk6/Transitions?node-id=0%3A1&t=rP68qlWlsqboSkDj-0</p>",
+  "main": "mainPageScript.js",
+  "scripts": {
+    "start": "json-server --watch ./users.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanKR/PWM-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urbanKR/PWM-project/issues"
+  },
+  "homepage": "https://github.com/urbanKR/PWM-project#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
