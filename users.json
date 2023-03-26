@@ -2,24 +2,30 @@
   "users": [
     {
       "id": 1,
-      "first_name": "Yeray",
-      "last_name": "Álvarez-Buylla Parra",
-      "email": "yabpenserio@gmail.com",
-      "phone_number": "+34634544215"
-    },
-    {
-      "id": 2,
       "first_name": "Krzysztof",
       "last_name": "Urban",
       "email": "urbankrzysz36@gmail.com",
-      "phone_number": "+48518052413"
+      "phone_number": "+48518052413",
+      "nationality": "Polish",
+      "description": "random description"
+    },
+    {
+      "id": 2,
+      "first_name": "Yeray",
+      "last_name": "Álvarez-Buylla Parra",
+      "email": "yabpenserio@gmail.com",
+      "phone_number": "+34634544215",
+      "nationality": "Spanish",
+      "description": "random description"
     },
     {
       "id": 3,
       "first_name": "Weronika",
       "last_name": "Wójcik",
       "email": "weronika.wooojcik@gmail.com",
-      "phone_number": "+48531928578"
+      "phone_number": "+48531928578",
+      "nationality": "Polish",
+      "description": "random description"
     }
   ]
 }
